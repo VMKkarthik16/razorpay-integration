@@ -60,6 +60,9 @@ router.post('/verify', async (req, res) => {
         if (razorpay_signature === expectedSign) {
             return res.status(200).json({ message: 'Payment verified by vivek ' });
         // vivek code
+
+            // karthik comment
+
         } else {
             return res.status(400).json({ message: 'Invalid signature sent!' });s
         }
